@@ -1,0 +1,3 @@
+The Android CER app repository contains final BSc project and dissertation work. 
+The Android application: Currency Exchange rate CER contain with two folder. One is called CurrenciesRateEchenge contains actual application include Java and XML sources. Second one is called CurrenciesRateExchangeTest contains unit testing on all non-activity classes in CurrenciesRateEchenge app.
+The Android CER app repository also contains pdf report. All the work was submitted under University of London regulation as part of the examination requirements for the BSc degree in Information System in Computing at Birkbeck University College of London.  
