@@ -1,0 +1,50 @@
+<!-- 
+	style.xml file is similar like .CSS file in web site.
+	It discribe different colour and style (shape) in CER app.  
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="dialog_light" parent="@android:style/Theme.Dialog">
+    	<item name="@android:windowBackground">@drawable/shapedialogtheme</item>
+    	<item name="@android:textColor">@color/black</item> 
+    	<item name="android:windowTitleStyle">@style/PauseDialogTitle</item>t
+	</style>
+	
+    
+	<style name="PauseDialogTitle" parent="@android:style/TextAppearance.DialogWindowTitle">
+            <item name="android:gravity">center_horizontal</item>
+            <item name="@android:textColor">@color/black</item>
+            <item name="@android:textStyle">bold|italic</item>
+      </style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+      
+
+    <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight, and colorSwitchThumbNormal. -->
+        
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        --> 
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme" >
+        <item name="android:textColor">#000000</item>
+        <item name="android:focusable">false</item>
+        <item name="android:overScrollHeader">#ff0000</item>
+        
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    	
+    <style name="PreferencesTheme">
+    	<item name="android:background">@color/colorPrimary_background</item>
+    	 <item name="android:textColor">#FFFFFF</item>
+	</style>
+</resources>

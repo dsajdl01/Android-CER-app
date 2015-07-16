@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  about_button.xml file gives a shape and colour of the background About button -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+           <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="5dp"/>
+            <solid android:color="#d4dbf6"/>
+            <padding android:left="10.0dip" android:top="10.0dip"
+                android:right="10.0dip" android:bottom="10.0dip"/>
+            <stroke android:width="0.5dip" android:color="#c5ceed"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false" >
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="5dp"/>
+            <solid android:color="#d4dbf6"/>
+            <padding android:left="10.0dip" android:top="10dip"
+                android:right="10.0dip" android:bottom="10.0dip"/>
+            <stroke android:width="0.5dip" android:color="#d4dbf6"/>
+        </shape>
+    </item>
+
+</selector>

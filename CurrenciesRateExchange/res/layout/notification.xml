@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	notification.xml is layout to describe notification layout 
+ 	It is used when a new notification object is created in runtime 
+ 	to inform user about current state of the application. 
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+	<TextView
+		   android:layout_width="fill_parent"
+		   android:layout_height="400dp"
+		   android:text="" />
+</LinearLayout>

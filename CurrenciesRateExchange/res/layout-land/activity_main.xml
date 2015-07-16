@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	activity_main.xml is main layout for CRE app.
+	It is used when the application get active and android 
+ 	screan device is in the horizontal position. 
+ -->
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:background="@color/white"
+	    android:paddingBottom="@dimen/activity_horizontal_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="0dip" >
+	    
+	      <LinearLayout
+				       	android:layout_width="fill_parent"
+				       	android:layout_height="wrap_content" 
+				       	android:id="@+id/linearLayoutSecond" 
+				       	android:paddingTop="-120dip"
+				       	android:paddingBottom="20dip"
+				       	android:layout_gravity="center"
+				       	android:gravity="center"
+				       	android:layout_marginTop="-26dip"
+				       	android:layout_marginLeft="0dip"
+				       	android:layout_marginRight="0dip"				 
+				     	android:background="@color/white">
+				     	
+	            		<Button 
+					 	    android:id="@+id/btn_about"
+					 	    android:layout_width="249dip"
+					 	    android:layout_height="wrap_content"
+					 	    android:layout_marginTop="0dip"
+					 	    android:layout_marginBottom="0dip"
+					 	    android:layout_marginRight="0dip"
+					 	    android:paddingBottom="0dip"
+					 	    android:paddingTop="24dip"
+					    	android:paddingLeft="0dip"
+					    	android:paddingRight="0dip"
+					    	android:layout_gravity="left|center"
+					    	android:textSize="14sp"
+							android:text="@string/btn_About"
+							android:onClick="btnAbout"
+							android:textStyle="bold"
+					 	    android:background="@drawable/about_button" />
+
+	            		<Button
+	            		    android:id="@+id/btn_used"
+	            		    android:layout_width="249dip"
+	            		    android:layout_height="wrap_content"
+	            		    android:layout_marginRight="0dip"
+	            		    android:layout_marginTop="0dip"
+	            		    android:background="@drawable/used_button"
+	            		    android:layout_gravity="left|center"
+	            		    android:onClick="btnToUse"
+	            		    android:paddingBottom="0dip"
+	            		    android:paddingLeft="0dip"
+	            		    android:paddingRight="0dip"
+	            		    android:paddingTop="24dip"
+	            		    android:text="@string/btn_used"
+	            		    android:textSize="14sp"
+	           			    android:textStyle="bold" /> 	
+		</LinearLayout>
+		
+	    <LinearLayout
+	       		android:layout_width="fill_parent" 
+	       		android:orientation="vertical"
+	       		android:id="@+id/linearLayoutFirst"
+	       		android:paddingTop="12dip"
+	       		android:paddingBottom="10dip"
+	       		android:layout_marginBottom="10dip"
+	     		android:background="@drawable/currency_layout" 
+	       		android:layout_height="wrap_content">
+		
+				    <LinearLayout
+							       	android:layout_width="fill_parent"
+							       	android:layout_height="wrap_content"
+							       	android:orientation="horizontal" 
+							       	android:id="@+id/linearLayout2" 
+							       	android:paddingTop="6dip"
+							       	android:layout_gravity="left|right"
+							       	android:gravity="left"
+							       	android:paddingBottom="15dip"
+							       	android:layout_marginLeft="1dip"
+							       	android:layout_marginRight="1dip"				 
+							     	android:background="@drawable/preference_layout">
+			
+						        <TextView
+						            android:id="@+id/txt_preference"
+						            android:layout_width="246dip"
+						            android:layout_height="wrap_content"
+						            android:layout_marginRight="3dip"
+						            android:paddingBottom="5dip"
+						            android:paddingLeft="8dip"
+						            android:paddingRight="1dip"
+						            android:paddingTop="0dip"
+						            android:text="@string/txt_preference"
+						            android:textSize="18sp"
+						            android:textStyle="bold" />
+								<LinearLayout
+								        android:orientation="horizontal"
+								        android:layout_width="fill_parent"
+								        android:layout_height="wrap_content"
+								        android:gravity="right" >
+								        
+								        <Button 
+									 	    android:id="@+id/btn_press"
+									 	    android:layout_width="138dip"
+									 	    android:layout_height="wrap_content"
+									 	    android:layout_marginTop="0dip"
+									 	    android:layout_marginLeft="4dip"
+									 	    android:layout_marginRight="14dip"
+									 	    android:paddingBottom="1dip"
+									 	    android:paddingTop="4dip"
+									    	android:paddingLeft="4dip"
+									    	android:paddingRight="1dip"
+									    	android:layout_gravity="right"
+									    	android:textSize="14sp"
+									 	    android:onClick="setPreferencies"
+									 	    android:background="@drawable/button" />
+						        
+						        </LinearLayout>
+					       </LinearLayout>
+					        
+				    
+			    <TextView  
+			        android:id="@+id/txt_from"
+			    	android:layout_width="fill_parent"
+			    	android:paddingTop="10dip"
+			    	android:paddingBottom="1dip"
+			    	android:paddingLeft="4dip"
+			    	android:paddingRight="1dip" 
+			    	android:layout_height="wrap_content"
+			    	android:textStyle="bold"
+			    	android:textSize="16sp" 
+			    	android:text="@string/from" />
+			      
+			    <Spinner  
+				    android:id="@+id/spinner_From"
+			       	android:layout_width="fill_parent"
+			       	android:paddingTop="5dip"
+			       	android:layout_marginLeft="4dip"
+			       	android:layout_marginBottom="2dip"
+			       	android:layout_marginRight="4dip"
+			       	android:layout_marginTop="0dip"
+			    	android:paddingBottom="5dip"
+			    	android:paddingLeft="1dip"
+			       	android:layout_height="wrap_content"
+			       	android:background="@color/white"
+			       	android:popupBackground="@color/popup_background"
+			       	android:textSize= "12sp"
+			       	android:drawSelectorOnTop="false" />
+			    <TextView
+			        android:id="@+id/txt_to"
+			    	android:layout_width="fill_parent" 
+			    	android:paddingTop="5dip"
+			    	android:paddingBottom="1dip"
+			    	android:paddingLeft="4dip"
+			    	android:paddingRight="1dip"
+			    	android:layout_height="wrap_content"
+			    	android:textStyle="bold"
+			    	android:textSize="16sp" 
+			    	android:text="@string/to" /> 
+			   
+			   <Spinner  
+				    android:id="@+id/spinner_to"
+			       	android:layout_width="fill_parent"
+			       	android:layout_marginLeft="4dip"
+			       	android:layout_marginBottom="10dip"
+			       	android:layout_marginRight="4dip"
+			       	android:layout_marginTop="0dip"
+			       	android:paddingTop="5dip"
+			    	android:paddingBottom="5dip"
+			    	android:paddingLeft="1dip"
+			       	android:layout_height="wrap_content"
+			       	android:background="@color/white"
+			       	android:popupBackground="@color/popup_background"
+			       	android:textSize="12sp"
+			    	android:layout_gravity="right"
+			       	android:drawSelectorOnTop="false" />
+			   
+			   	<TextView
+		   		    android:id="@+id/txtview_inputRate"
+		   		    android:layout_width="fill_parent"
+		   		    android:layout_height="wrap_content"
+		   		    android:paddingTop="0dip"
+		   		    android:paddingBottom="15dip"
+		   		    android:maxLines="6" 
+    				android:singleLine="false"
+		   		    android:background="@color/main_background" />
+			   	
+			   	<LinearLayout
+				       	android:layout_width="fill_parent"
+				       	android:layout_height="wrap_content" 
+				       	android:id="@+id/linearLayout3" 
+				       	android:paddingTop="10dip"
+				       	android:paddingBottom="4dip"
+				       	android:layout_marginLeft="1dip"
+				       	android:layout_marginRight="1dip"
+				       	android:gravity="left"				 
+				     	android:background="@drawable/input_layout" >
+	   		
+						<EditText 
+				   		    android:id="@+id/txtEdit_amount"
+				   		    android:layout_width="300dip"
+				   		    android:layout_height="match_parent"
+				   		    android:layout_marginLeft="3dip"
+					       	android:layout_marginBottom="5dip"
+					       	android:layout_marginRight="8dip"
+					       	android:layout_marginTop="10dip"
+					       	android:paddingTop="3dip"
+					       	android:inputType="numberDecimal"
+					       	android:maxLength="7"
+					    	android:paddingBottom="3dip"
+					    	android:paddingLeft="1dip"
+					    	android:gravity="left"
+				   		    android:hint="@string/hint_amount" 
+				   		    android:background="@color/white" />   
+			   	     	 
+				   		
+				   		<LinearLayout
+							android:orientation="horizontal"
+							android:layout_width="fill_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="8dip"
+							android:gravity="right" >
+				   		
+					   		<Button 
+					   		    android:layout_width="130dip"
+					   		    android:layout_height="wrap_content"
+					   		    android:layout_marginRight="4dip"
+					   		    android:onClick="getData"
+					   		    android:gravity="center"
+					   		    android:layout_gravity="right"
+					   		    android:background="@drawable/result_button" />
+				   		  </LinearLayout>
+				   		
+		   		</LinearLayout>
+		   		  <TextView
+				   		    android:id="@+id/txtview_output_user_result"
+				   		    android:layout_width="fill_parent"
+				   		    android:layout_height="wrap_content" 
+				   		    android:paddingTop="0dip"
+				   		    android:paddingBottom="5dip"
+				   		    android:layout_marginLeft="4dip"
+					       	android:layout_marginBottom="0dip"
+					       	android:layout_marginRight="4dip"
+					       	android:layout_marginTop="0dip"
+					    	android:paddingLeft="1dip"
+				   		    android:text="@string/txt_output"
+				   		    android:background="@color/main_background"/>
+		   		
+			</LinearLayout>
+	      
+	    	
+	</LinearLayout>
+</ScrollView>

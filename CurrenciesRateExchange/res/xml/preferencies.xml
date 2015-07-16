@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	preferencies.xml file is the preference, which is used to set 
+	which bank would be calautated currency rate exchange.
+	It is used when about button "Setting exchange Preference" 
+	is pressed and preference gets active.  
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="checkbox_pref"
+    android:title="Check Rate Preferences" >
+    
+    <Preference 
+        android:icon="@drawable/arrow"
+        android:title="Back to main screen"
+        android:key="button"/>
+    
+    <ListPreference 
+        android:title="Select Rate Preferences"
+        android:summary="Click and then select bank,\nwhich will calculate currency rate or\nselect the best results and the system will display the best currency rate offer on the first line"
+        android:key="dispalyRate"
+        android:defaultValue="1"
+        android:entries="@array/arrayListOfBanks"
+        android:entryValues="@array/arrayValuesOfBanks"/>
+
+</PreferenceScreen>

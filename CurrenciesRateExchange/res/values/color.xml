@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- color.xml describe different colour  that is used in the CRE app. -->
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="main_background">#d4dbf6</color>
+    <color name="txt_output">#f1f1f1</color>
+    <color name="popup_background">#EDEDED</color>
+    <color name="textColor">#000000</color>
+    <color name="btn_backgroung">#efefef</color>
+    <color name="toast_background">#000000</color>
+    <color name="colorPrimary_background">#242424</color>
+    <color name="black">#000000</color>
+	<color name="whitegrey">#d4dbf6</color>
+</resources>

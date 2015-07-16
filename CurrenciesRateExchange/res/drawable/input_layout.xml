@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- input_layout.xml gives background colour and top horizontal line to calculate conversion section. 
+Calculate conversion section is where the users are allowed to enter amount of money and press equal button. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+        <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="#d4dbf6" />
+        </shape>
+    </item>
+    <item android:top="0dp" android:right="-4dp" android:left="-4dp" android:bottom="-6dip">
+        <shape>
+            <solid android:color="#d4dbf6"/>
+            <stroke
+                android:width="2dp"
+                android:color="#f1f1f1" />
+        </shape>
+    </item>
+</layer-list>

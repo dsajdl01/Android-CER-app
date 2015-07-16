@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	how_to_use.xml file is the layout uses for describing how to use activity.
+	It is used when How To Use button is pressed and new activity (how_to_use) gets active.  
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dip" >
+
+    <TextView
+        android:id="@+id/use_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/used_text1" />
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- preference_layout.xml file gives background colour and bottom horizontal line to preference section. 
+ Preference section is where selected preference is displayed with Select preference button -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="#d4dbf6" />
+        </shape>
+    </item>
+    <item android:top="-8dp" android:right="-3dp" android:left="-3dp">
+        <shape>
+            <solid android:color="#d4dbf6"/>
+            <stroke
+                android:width="2dp"
+                android:color="#f1f1f1" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=12884, tid=13156
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_20-b26) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.20-b23 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000219e800):  JavaThread "Unknown thread" [_thread_in_vm, id=13156, stack(0x0000000002320000,0x0000000002420000)]
+
+Stack: [0x0000000002320000,0x0000000002420000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3152fa]
+V  [jvm.dll+0x265d03]
+V  [jvm.dll+0x266943]
+V  [jvm.dll+0x25e1e6]
+V  [jvm.dll+0x5e64c]
+V  [jvm.dll+0x5e743]
+V  [jvm.dll+0x7316a]
+V  [jvm.dll+0x734c8]
+V  [jvm.dll+0xe3937]
+V  [jvm.dll+0xe3cc6]
+V  [jvm.dll+0x1f89d7]
+V  [jvm.dll+0x229fc4]
+V  [jvm.dll+0x14c6f1]
+C  [javaw.exe+0x20c6]
+C  [javaw.exe+0xc9eb]
+C  [javaw.exe+0xca7f]
+C  [kernel32.dll+0x159ed]
+C  [ntdll.dll+0x2c541]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000219e800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=13156, stack(0x0000000002320000,0x0000000002420000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.064 loading class java/lang/CharSequence done
+Event: 0.064 loading class java/lang/String done
+Event: 0.064 loading class java/lang/Class
+Event: 0.064 loading class java/lang/reflect/AnnotatedElement
+Event: 0.064 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.064 loading class java/lang/reflect/GenericDeclaration
+Event: 0.064 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.064 loading class java/lang/reflect/Type
+Event: 0.064 loading class java/lang/reflect/Type done
+Event: 0.064 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x000000013ff40000 - 0x000000013ff74000 	C:\Program Files\Java\jre1.8.0_20\bin\javaw.exe
+0x0000000077100000 - 0x00000000772a9000 	C:\windows\SYSTEM32\ntdll.dll
+0x0000000076ee0000 - 0x0000000076fff000 	C:\windows\system32\kernel32.dll
+0x000007fefcfc0000 - 0x000007fefd02c000 	C:\windows\system32\KERNELBASE.dll
+0x000007fefd9a0000 - 0x000007fefda7b000 	C:\windows\system32\ADVAPI32.dll
+0x000007fefed20000 - 0x000007fefedbf000 	C:\windows\system32\msvcrt.dll
+0x000007fefd6b0000 - 0x000007fefd6cf000 	C:\windows\SYSTEM32\sechost.dll
+0x000007fefedc0000 - 0x000007fefeeed000 	C:\windows\system32\RPCRT4.dll
+0x0000000077000000 - 0x00000000770fa000 	C:\windows\system32\USER32.dll
+0x000007feff130000 - 0x000007feff197000 	C:\windows\system32\GDI32.dll
+0x000007feff3b0000 - 0x000007feff3be000 	C:\windows\system32\LPK.dll
+0x000007fefd5e0000 - 0x000007fefd6a9000 	C:\windows\system32\USP10.dll
+0x000007fefb8e0000 - 0x000007fefbad4000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefd6d0000 - 0x000007fefd741000 	C:\windows\system32\SHLWAPI.dll
+0x000007fefeef0000 - 0x000007fefef1e000 	C:\windows\system32\IMM32.DLL
+0x000007fefd4d0000 - 0x000007fefd5d9000 	C:\windows\system32\MSCTF.dll
+0x000000006ec20000 - 0x000000006ecf2000 	C:\Program Files\Java\jre1.8.0_20\bin\msvcr100.dll
+0x000000005cbc0000 - 0x000000005d418000 	C:\Program Files\Java\jre1.8.0_20\bin\server\jvm.dll
+0x000007fef99c0000 - 0x000007fef99c9000 	C:\windows\system32\WSOCK32.dll
+0x000007feff3c0000 - 0x000007feff40d000 	C:\windows\system32\WS2_32.dll
+0x000007feff080000 - 0x000007feff088000 	C:\windows\system32\NSI.dll
+0x000007fefad00000 - 0x000007fefad3b000 	C:\windows\system32\WINMM.dll
+0x00000000772c0000 - 0x00000000772c7000 	C:\windows\system32\PSAPI.DLL
+0x000000005e0c0000 - 0x000000005e0cf000 	C:\Program Files\Java\jre1.8.0_20\bin\verify.dll
+0x000000005e090000 - 0x000000005e0b8000 	C:\Program Files\Java\jre1.8.0_20\bin\java.dll
+0x000000005cba0000 - 0x000000005cbb6000 	C:\Program Files\Java\jre1.8.0_20\bin\zip.dll
+0x000007fef96c0000 - 0x000007fef97e5000 	C:\windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Program Files (x86)\Android\android-sdk\platforms\android-20\android.jar 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 11822 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -classNames org.example.currenciesrateexchange.SetTestValidateXRateData
+java_class_path (initial): H:\aaa_school\and_projects2\CurrenciesRateExchange\bin\classes;H:\aaa_school\and_projects2\appcompat_v7\libs\android-support-v4.jar;H:\aaa_school\and_projects2\appcompat_v7\libs\android-support-v7-appcompat.jar;H:\aaa_school\and_projects2\appcompat_v7\bin\appcompat_v7.jar;C:\eclipse\plugins\org.junit_4.11.0.v201303080030\junit.jar;C:\eclipse\plugins\org.hamcrest.core_1.3.0.v201303031735.jar;/C:/Users/dsajdl01/.eclipse/org.eclipse.platform_4.4.0_1770938306_win32_win32_x86_64/configuration/org.eclipse.osgi/205/0/.cp/;/C:/Users/dsajdl01/.eclipse/org.eclipse.platform_4.4.0_1770938306_win32_win32_x86_64/configuration/org.eclipse.osgi/204/0/.cp/
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_20
+PATH=C:/Program Files/Java/jre1.8.0_20/bin/server;C:/Program Files/Java/jre1.8.0_20/bin;C:/Program Files/Java/jre1.8.0_20/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Haskell\bin;C:\Program Files (x86)\Haskell Platform\2013.2.0.0\lib\extralibs\bin;C:\Program Files (x86)\Haskell Platform\2013.2.0.0\bin;C:\Python27\Lib\site-packages\PyQt4;C:\Oracle\product\10.1.0\Client_1\bin;C:\Perl64\site\bin;C:\Perl64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Oracle\instantclient_12_1;C:\Python27;C:\Python27\DLLs;C:\Python27\Scripts;C:\Python27\Lib\site-packages\vtk;C:\Python27\gnuplot\binary;C:\Python27\Lib\site-packages\osgeo;C:\Program Files (x86)\pythonxy\SciTE-3.3.2-3;C:\Program Files (x86)\pythonxy\console;C:\MinGW32-xy\bin;C:\Program Files (x86)\pythonxy\swig;C:\Program Files (x86)\pythonxy\gettext\bin;C:\Program Files (x86)\Groovy\Groovy-2.3.4\bin;C:\Program Files (x86)\Haskell Platform\2013.2.0.0\mingw\bin;C:\Program Files\jEdit;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\scala\bin;C:\Program Files\MATLAB\R2014a\bin;C:\condor\bin\;C:\Program Files\MATLAB\MATLAB Compiler Runtime\v83\runtime\win64;C:\eclipse;
+USERNAME=dsajdl01
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 8257092k(3279156k free), swap 16512320k(9692940k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.20-b23) for windows-amd64 JRE (1.8.0_20-b26), built on Jul 30 2014 13:51:23 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Jan 07 17:24:29 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
